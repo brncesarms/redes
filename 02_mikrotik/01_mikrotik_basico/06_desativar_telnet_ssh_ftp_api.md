@@ -1,3 +1,16 @@
+---
+title: "Desativar - TELNET, SSH, FTP, API"
+date_created: 2024-02-25
+author: "Bruno César / Antigravity"
+privacy: public
+tags:
+  - publico
+  - redes
+  - mikrotik
+  - mikrotik_basico
+  - routeros
+---
+
 # 6 - Desativar - TELNET, SSH, FTP, API
 
 ```

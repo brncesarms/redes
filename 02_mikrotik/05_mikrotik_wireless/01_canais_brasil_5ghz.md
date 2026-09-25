@@ -1,3 +1,16 @@
+---
+title: "Canais Brasil 5.8 GHz"
+date_created: 2024-02-25
+author: "Bruno César / Antigravity"
+privacy: public
+tags:
+  - publico
+  - redes
+  - mikrotik
+  - mikrotik_wireless
+  - routeros
+---
+
 # Canais Brasil 5.8 GHz
 
 Ubiquiti velho

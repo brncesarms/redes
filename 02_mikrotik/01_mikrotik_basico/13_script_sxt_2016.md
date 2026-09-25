@@ -1,3 +1,16 @@
+---
+title: "SCRIPT-SXT-25-11-2016"
+date_created: 2024-02-25
+author: "Bruno César / Antigravity"
+privacy: public
+tags:
+  - publico
+  - redes
+  - mikrotik
+  - mikrotik_basico
+  - routeros
+---
+
 # SCRIPT-SXT-25-11-2016
 
 ## Este script contem algumas configurações básicas para SXT

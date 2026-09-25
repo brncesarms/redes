@@ -1,3 +1,14 @@
+---
+title: "Removendo SkyNet"
+date_created: 2024-02-25
+author: "Bruno César / Antigravity"
+privacy: public
+tags:
+  - publico
+  - redes
+  - ubiquiti
+---
+
 # Removendo SkyNet
 
 PuTTY

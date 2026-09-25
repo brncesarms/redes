@@ -1,3 +1,16 @@
+---
+title: "Automatic reboot mikrotik"
+date_created: 2024-02-25
+author: "Bruno César / Antigravity"
+privacy: public
+tags:
+  - publico
+  - redes
+  - mikrotik
+  - mikrotik_basico
+  - routeros
+---
+
 # Automatic reboot mikrotik
 
 ## Script

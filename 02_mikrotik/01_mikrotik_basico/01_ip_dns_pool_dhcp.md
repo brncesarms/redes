@@ -1,3 +1,16 @@
+---
+title: "IP, DNS, POOL e DHCP"
+date_created: 2024-02-25
+author: "Bruno César / Antigravity"
+privacy: public
+tags:
+  - publico
+  - redes
+  - mikrotik
+  - mikrotik_basico
+  - routeros
+---
+
 # 1 - IP, DNS, POOL e DHCP
 
 

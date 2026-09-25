@@ -1,3 +1,14 @@
+---
+title: "Diferenças entre redes WIFI - A B G N"
+date_created: 2024-02-25
+author: "Bruno César / Antigravity"
+privacy: public
+tags:
+  - publico
+  - redes
+  - redes_basico
+---
+
 # Diferenças entre redes WIFI - A B G N
 
 O padrão de rede Wi-Fi é dividido em várias partes, conheça algumas delas:

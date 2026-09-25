@@ -1,3 +1,16 @@
+---
+title: "Analise espectral"
+date_created: 2024-02-25
+author: "Bruno César / Antigravity"
+privacy: public
+tags:
+  - publico
+  - redes
+  - mikrotik
+  - mikrotik_wireless
+  - routeros
+---
+
 # Analise espectral
 
 ```

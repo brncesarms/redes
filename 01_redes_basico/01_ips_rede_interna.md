@@ -1,3 +1,14 @@
+---
+title: "IPs rede interna"
+date_created: 2024-02-25
+author: "Bruno César / Antigravity"
+privacy: public
+tags:
+  - publico
+  - redes
+  - redes_basico
+---
+
 # IPs rede interna
 
 Veja aqui quais são os IPs que devem ser utilizados numa rede internet

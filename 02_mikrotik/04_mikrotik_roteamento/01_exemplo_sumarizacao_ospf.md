@@ -1,3 +1,16 @@
+---
+title: "Exemplo_sumarização_OSPF"
+date_created: 2024-02-25
+author: "Bruno César / Antigravity"
+privacy: public
+tags:
+  - publico
+  - redes
+  - mikrotik
+  - mikrotik_roteamento
+  - routeros
+---
+
 # Exemplo_sumarização_OSPF
 
 ```

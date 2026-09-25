@@ -1,3 +1,16 @@
+---
+title: "Dicas-Mikrotik-EVE-NG"
+date_created: 2024-02-25
+author: "Bruno César / Antigravity"
+privacy: public
+tags:
+  - publico
+  - redes
+  - mikrotik
+  - mikrotik_eve_ng
+  - routeros
+---
+
 # Dicas-Mikrotik-EVE-NG
 
 * Fontes:
