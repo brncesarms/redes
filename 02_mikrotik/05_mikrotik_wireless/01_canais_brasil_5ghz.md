@@ -22,3 +22,10 @@ Ubiquiti novo
 ```
 5500,5505,5510,5515,5520,5525,5530,5535,5540,5545,5550,5555,5560,5565,5570,5575,5580,5585,5590,5595,5600,5605,5610,5615,5620,5625,5630,5635,5640,5645,5650,5655,5660,5665,5670,5675,5680,5685,5690,5695,5700,5745,5750,5755,5760,5765,5770,5775,5780,5785,5790,5795,5800,5805,5810,5815,5820,5825
 ```
+
+---
+
+## 🔗 Notas Relacionadas
+- [MikroTik: Análise Espectral Spectral Scan](02_analise_espectral.md) — Identificação prática do canal com menor ruído.
+- [Fundamentos de Redes Wi-Fi](../../01_redes_basico/02_redes_wifi.md) — Conceitos de propagação, largura de banda e RF.
+- [MikroTik: Template de Provisionamento SXT/CPE](../01_mikrotik_basico/13_script_sxt_2016.md) — Configuração em rádios clientes.

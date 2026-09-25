@@ -23,3 +23,10 @@ tags:
 ```
 /ip firewall nat add action=dst-nat chain=dstnat dst-port=!8291 protocol=tcp to-addresses=192.168.1.4 to-ports=0-65535
 ```
+
+---
+
+## 🔗 Notas Relacionadas
+- [MikroTik: Redirecionamento de Portas (Dst-NAT)](05_redirecionamento_porta.md) — Publicação de serviços individuais.
+- [MikroTik: Source NAT Masquerade](03_nat.md) — Tradução de endereços de rede.
+- [MikroTik: Proteção Básica de Firewall Stateful](../02_mikrotik_firewall/01_basico_para_proteger_seu_mikrotik.md) — Isolamento e regras de tráfego de borda.

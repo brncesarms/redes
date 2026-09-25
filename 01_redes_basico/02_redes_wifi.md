@@ -52,3 +52,10 @@ Outro grande destaque da tecnologia é a melhora do sinal.
 O padrão 802.11ac usa a tecnologia chamada de “Beam Forming” na transmissão e recepção de dados.  
 Através dela o roteador e os usuários identificam qual a posição relativa entre um e outro e assim é possível focar o sinal na direção correta.
 
+---
+
+## 🔗 Notas Relacionadas
+- [IPs de Rede Interna e Sub-redes](01_ips_rede_interna.md) — Classes RFC 1918 e dimensionamento CIDR.
+- [MikroTik Wireless: Canais Brasil 5 GHz](../02_mikrotik/05_mikrotik_wireless/01_canais_brasil_5ghz.md) — Canais e potências homologadas na faixa 5 GHz.
+- [MikroTik Wireless: Análise Espectral](../02_mikrotik/05_mikrotik_wireless/02_analise_espectral.md) — Diagnóstico de piso de ruído via Spectral Scan.
+- [Guia Principal de Redes](../README.md) — Mapa de conteúdo de redes e conectividade.

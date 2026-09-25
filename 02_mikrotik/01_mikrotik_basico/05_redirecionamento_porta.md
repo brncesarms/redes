@@ -22,3 +22,10 @@ tags:
 ```
 /ip firewall nat add action=dst-nat chain=dstnat comment="CAMERAS SERVER" dst-address=177.11.164.10 to-addresses=192.168.2.3
 ```
+
+---
+
+## 🔗 Notas Relacionadas
+- [MikroTik: Zona Desmilitarizada (DMZ)](04_dmz.md) — Encaminhamento completo de host em zona isolada.
+- [MikroTik: Source NAT Masquerade](03_nat.md) — Mascaramento de tráfego de saída.
+- [MikroTik: Proteção Básica de Firewall Stateful](../02_mikrotik_firewall/01_basico_para_proteger_seu_mikrotik.md) — Regras de inspeção de estado no firewall.

@@ -45,3 +45,10 @@ add address=192.168.1.0/24 gateway=192.168.1.1
 /user 
 remove admin 
 ```
+
+---
+
+## 🔗 Notas Relacionadas
+- [MikroTik: Habilitação de RoMON](11_habilitar_romon.md) — Gerenciamento em camada 2.
+- [MikroTik Wireless: Canais Brasil 5 GHz](../05_mikrotik_wireless/01_canais_brasil_5ghz.md) — Plano de frequência e canais regulamentados.
+- [MikroTik Wireless: Análise Espectral](../05_mikrotik_wireless/02_analise_espectral.md) — Varredura de RF e ruído.

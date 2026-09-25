@@ -42,3 +42,11 @@ tags:
 /ip dhcp-server network add address=192.168.10.0/24 dns-server=8.8.4.8,1.0.0.1 gateway=192.168.10.1
 
 ```
+
+---
+
+## 🔗 Notas Relacionadas
+- [MikroTik: Source NAT Masquerade](03_nat.md) — Tradução de endereços para saída à Internet.
+- [MikroTik: Servidor DNS Cache](10_servidor_dns_mikrotik.md) — Cache local de nomes e resolução estática.
+- [Fundamentos de IPs e Sub-redes](../../01_redes_basico/01_ips_rede_interna.md) — Dimensionamento de pools e faixas de rede privada.
+- [Guia Principal de Redes](../../README.md) — Índice completo de engenharia de redes.

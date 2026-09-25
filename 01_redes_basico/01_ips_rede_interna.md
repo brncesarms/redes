@@ -28,3 +28,11 @@ Não utilize nenhuma outra faixa de IPs em sua rede interna que não sejam lista
 /27 - 32
 /28 - 16
 ```
+
+---
+
+## 🔗 Notas Relacionadas
+- [Redes Wi-Fi: Propagação e Frequências](02_redes_wifi.md) — Fundamentos de RF e boas práticas sem fio.
+- [MikroTik: IP, DNS, Pool e Servidor DHCP](../02_mikrotik/01_mikrotik_basico/01_ip_dns_pool_dhcp.md) — Configuração prática de sub-redes e entrega de IP.
+- [Arquitetura de Rede, Tailscale e VPN](../04_vpn_tailscale/01_arquitetura_tailscale_vpn_mikrotik.md) — Malhas privadas e VPNs para clientes MikroTik.
+- [Guia Principal de Redes](../README.md) — Mapa de conteúdo de redes e conectividade.

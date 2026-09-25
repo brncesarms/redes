@@ -24,3 +24,10 @@ add action=mark-packet chain=prerouting connection-mark=tv-conexoes new-packet-m
 /queue tree 
 add limit-at=3M max-limit=3M name=IPTV packet-mark=tv-pacotes parent=global priority=1
 ```
+
+---
+
+## 🔗 Notas Relacionadas
+- [MikroTik: Controle de Banda por IP (Simple Queues)](09_controle_de_banda_por_ip.md) — Limitação de taxa de upload/download por host.
+- [MikroTik: Bloqueio de Sites e Serviços](07_bloqueio_sites_servicos.md) — Políticas de acesso e listas de controle.
+- [MikroTik: Proteção Básica de Firewall Stateful](../02_mikrotik_firewall/01_basico_para_proteger_seu_mikrotik.md) — Regras de filtragem e FastTrack.

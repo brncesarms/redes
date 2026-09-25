@@ -163,3 +163,11 @@ omarchy plugin enable jkoestinger.vpn --section right
 tailscale status
 sudo tailscale set --operator=brn
 ```
+
+---
+
+## 🔗 Notas Relacionadas
+- [MikroTik: Proteção Básica de Firewall Stateful](../02_mikrotik/02_mikrotik_firewall/01_basico_para_proteger_seu_mikrotik.md) — Filtragem e regras de tráfego VPN.
+- [MikroTik: Acesso SSH via Terminal Linux](../02_mikrotik/01_mikrotik_basico/12_acesso_ssh_mikrotik_via_terminal_linux.md) — Acesso remoto via malha privada.
+- [Fundamentos de IPs e Sub-redes](../01_redes_basico/01_ips_rede_interna.md) — Roteamento de sub-redes remotas (Subnet Routing).
+- [Guia Principal de Redes](../README.md) — Índice de conectividade e redes.

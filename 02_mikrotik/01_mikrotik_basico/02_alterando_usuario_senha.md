@@ -24,3 +24,10 @@ tags:
 ```
 /user remove admin
 ```
+
+---
+
+## 🔗 Notas Relacionadas
+- [MikroTik: Desativação de Serviços Inseguros](06_desativar_telnet_ssh_ftp_api.md) — Hardening de portas e serviços do RouterOS.
+- [MikroTik: Acesso SSH via Terminal Linux](12_acesso_ssh_mikrotik_via_terminal_linux.md) — Automação com chaves criptográficas SSH.
+- [MikroTik: Proteção Básica de Firewall Stateful](../02_mikrotik_firewall/01_basico_para_proteger_seu_mikrotik.md) — Regras essenciais de proteção do roteador.

@@ -16,3 +16,10 @@ tags:
 ``` 
 /queue simple add max-limit=768k/768k name=Roteador-WIFI target=192.168.10.30/32
 ```
+
+---
+
+## 🔗 Notas Relacionadas
+- [MikroTik: Priorização de Tráfego e QoS](08_priorizar_sites_e_servicos.md) — Classificação de tráfego e marcação Mangle.
+- [MikroTik: IP, DNS, Pool e Servidor DHCP](01_ip_dns_pool_dhcp.md) — Escopos e faixas de IP atribuídas.
+- [Fundamentos de IPs e Sub-redes](../../01_redes_basico/01_ips_rede_interna.md) — Estruturação de prefixos de rede.

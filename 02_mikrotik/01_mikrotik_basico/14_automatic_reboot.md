@@ -42,4 +42,9 @@ add interval=1d name=schedule_automatic_reboot on-event=\
 
 ```
 
+---
 
+## 🔗 Notas Relacionadas
+- [MikroTik: IP, DNS, Pool e Servidor DHCP](01_ip_dns_pool_dhcp.md) — Serviços essenciais do roteador.
+- [MikroTik: Proteção Básica de Firewall Stateful](../02_mikrotik_firewall/01_basico_para_proteger_seu_mikrotik.md) — Segurança de borda contínua.
+- [Guia Principal de Redes](../../README.md) — Índice principal.

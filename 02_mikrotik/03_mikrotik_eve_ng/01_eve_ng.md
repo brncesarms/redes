@@ -73,3 +73,9 @@ rm -rf chr*
 
 ```
 
+---
+
+## 🔗 Notas Relacionadas
+- [MikroTik: Sumarização de Rotas no OSPF](../04_mikrotik_roteamento/01_exemplo_sumarizacao_ospf.md) — Laboratório prático de OSPF virtualizado.
+- [Fundamentos de IPs e Sub-redes](../../01_redes_basico/01_ips_rede_interna.md) — Endereçamento IP em topologias simuladas.
+- [MikroTik: IP, DNS, Pool e Servidor DHCP](../01_mikrotik_basico/01_ip_dns_pool_dhcp.md) — Configuração básica em nós virtuais CHR.
