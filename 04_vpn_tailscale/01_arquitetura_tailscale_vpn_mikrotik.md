@@ -1,7 +1,7 @@
 ---
 title: "Passo a Passo: Arquitetura de Rede, Tailscale e VPN para Clientes MikroTik"
 date_created: 2026-09-24
-author: "Bruno César / Antigravity"
+author: "Bruno César"
 privacy: public
 tags:
   - publico

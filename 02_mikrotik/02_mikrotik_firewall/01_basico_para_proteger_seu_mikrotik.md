@@ -1,7 +1,7 @@
 ---
 title: "Básico para proteger seu Mikrotik"
 date_created: 2024-02-25
-author: "Bruno César / Antigravity"
+author: "Bruno César"
 privacy: public
 tags:
   - publico

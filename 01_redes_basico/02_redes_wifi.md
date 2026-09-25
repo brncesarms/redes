@@ -1,7 +1,7 @@
 ---
 title: "Diferenças entre redes WIFI - A B G N"
 date_created: 2024-02-25
-author: "Bruno César / Antigravity"
+author: "Bruno César"
 privacy: public
 tags:
   - publico
