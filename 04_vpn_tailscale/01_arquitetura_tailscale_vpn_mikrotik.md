@@ -32,7 +32,7 @@ flowchart TD
         
         W1["🌐 community.network"]
         W2["⚡ omarchy.tailscale"]
-        W3["🔒 jkoestinger.vpn"]
+        W3["🔒 nm-applet (NetworkManager VPN)"]
         
         Bar --> W1
         Bar --> W2
@@ -107,9 +107,9 @@ O Tailscale garante interconexão segura entre os nós da bancada e dispositivos
 
 ---
 
-## 🔒 4. Conexão a Redes de Clientes com MikroTik: `jkoestinger.vpn`
+## 🔒 4. Conexão a Redes de Clientes com MikroTik: `nm-applet` & `nm-connection-editor`
 
-Para acessar a infraestrutura de clientes com IP público fixo e roteadores MikroTik RouterOS v7, utilizamos o plugin **`jkoestinger.vpn`**, que se comunica diretamente com os backends do **NetworkManager**.
+Para acessar a infraestrutura de clientes com IP público fixo e roteadores MikroTik RouterOS v7, utilizamos o ecossistema gráfico oficial do **NetworkManager** (`nm-applet` e `nm-connection-editor`), permitindo gerenciar perfis visualmente e discar túneis corporativos com 1 clique direto na bandeja do Hyprland.
 
 ### 🔌 Cenário 1: Cliente com WireGuard no MikroTik (Recomendado no RouterOS v7)
 O WireGuard é o protocolo de maior rendimento e menor overhead no RouterOS v7.
@@ -119,31 +119,26 @@ O WireGuard é o protocolo de maior rendimento e menor overhead no RouterOS v7.
    - Crie o peer apontando para a chave pública da sua máquina (`/interface wireguard peers add interface=wg-remoto public-key="..." allowed-address=10.200.0.2/32`).
 2. **Na sua Workstation Omarchy:**
    - Salve o arquivo de configuração `cliente-alpha.conf` contendo a chave privada, endpoint (IP público fixo do cliente) e rotas permitidas.
-   - Importe no NetworkManager:
+   - Importe no NetworkManager via terminal ou interface gráfica:
      ```bash
      nmcli connection import type wireguard file cliente-alpha.conf
      ```
-3. **Pela Interface da Barra:**
-   - O widget de VPN na barra reconhecerá o perfil `cliente-alpha` automaticamente.
-   - Basta clicar no chip para conectar. O tráfego para a sub-rede do cliente passará pelo túnel imediatamente.
+3. **Pela Interface da Bandeja (Tray):**
+   - O `nm-applet` na bandeja do Hyprland reconhecerá o perfil `cliente-alpha` automaticamente.
+   - Basta clicar no ícone de rede ➡️ **Conexões VPN** ➡️ **cliente-alpha** para conectar instantaneamente com 1 clique.
 
 ---
 
 ### 🛡️ Cenário 2: Cliente com OpenVPN no MikroTik
 Caso o cliente utilize servidor OpenVPN no MikroTik:
 
-1. **Importação do Perfil `.ovpn`:**
-   ```bash
-   nmcli connection import type openvpn file cliente-beta.ovpn
-   ```
-2. **Armazenamento Seguro de Credenciais (Opcional - Conexão em 1 Clique):**
-   Para não precisar digitar senha a cada conexão:
-   ```bash
-   nmcli connection modify cliente-beta +vpn.data username=bruno.admin
-   nmcli connection modify cliente-beta +vpn.data password-flags=0
-   nmcli connection modify cliente-beta vpn.secrets 'password=SuaSenhaForte'
-   ```
-3. Ao clicar no perfil no painel de VPN, a conexão subirá em 1 segundo.
+1. **Importação do Perfil `.ovpn` Visualmente:**
+   - Abra o editor gráfico: `nm-connection-editor &`
+   - Clique em **`+`**, selecione **"Importar uma configuração de VPN salva..."** e escolha o arquivo `.ovpn`.
+2. **Armazenamento de Credenciais:**
+   - Preencha o usuário e senha diretamente nas caixas de diálogo do editor visual.
+3. **Discagem:**
+   - Ao clicar no perfil pelo `nm-applet`, a conexão sobe em 1 segundo.
 
 ---
 
@@ -156,10 +151,13 @@ Caso precise reconfigurar ou auditar os nós da bancada:
 omarchy plugin enable community.network --section right
 omarchy plugin disable omarchy.network
 
-# 2. Instalação e Ativação do jkoestinger.vpn
-omarchy plugin enable jkoestinger.vpn --section right
+# 2. Ecossistema Gráfico Oficial de VPN NetworkManager
+sudo pacman -S --needed network-manager-applet networkmanager-openvpn networkmanager-openconnect networkmanager-vpnc networkmanager-strongswan
 
-# 3. Tailscale Status & Operator
+# 3. Autostart no Hyprland (~/.config/hypr/autostart.lua)
+# o.launch_on_start("nm-applet --indicator")
+
+# 4. Tailscale Status & Operator
 tailscale status
 sudo tailscale set --operator=brn
 ```
