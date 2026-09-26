@@ -152,10 +152,27 @@ omarchy plugin enable community.network --section right
 omarchy plugin disable omarchy.network
 
 # 2. Ecossistema Gráfico Oficial de VPN NetworkManager
-sudo pacman -S --needed network-manager-applet networkmanager-openvpn networkmanager-openconnect networkmanager-vpnc networkmanager-strongswan
+sudo pacman -S --needed network-manager-applet nm-connection-editor networkmanager-openvpn networkmanager-openconnect networkmanager-vpnc networkmanager-strongswan
 
-# 3. Autostart no Hyprland (~/.config/hypr/autostart.lua)
-# o.launch_on_start("nm-applet --indicator")
+# 3. Serviço Determinístico no Systemd de Usuário (~/.config/systemd/user/nm-applet.service)
+mkdir -p ~/.config/systemd/user/
+cat << 'EOF' > ~/.config/systemd/user/nm-applet.service
+[Unit]
+Description=NetworkManager Applet (Systray VPN & Network)
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/nm-applet --indicator
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=graphical-session.target default.target
+EOF
+
+systemctl --user daemon-reload
+systemctl --user enable --now nm-applet.service
 
 # 4. Tailscale Status & Operator
 tailscale status
